@@ -5,12 +5,11 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
-public class SortMonthNames {
+class SortMonthNames {
 
     static void sortMonthNames(List<String> strings) {
         Collections.sort(strings, new SortMonth());
     }
-
 }
 
 class SortMonth implements Comparator<String> {
