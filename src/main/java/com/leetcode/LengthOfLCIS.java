@@ -19,6 +19,7 @@
  * Note: Length of the array will not exceed 10,000.
  *
  */
+
 package com.leetcode;
 
 class LengthOfLCIS {
