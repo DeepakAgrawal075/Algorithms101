@@ -30,6 +30,7 @@ package com.codefights;
  * The minimal number of statues that need to be added to existing statues such that
  * it contains every integer size from an interval [L, R] (for some L, R) and no other sizes.
  */
+
 public class MakeArrayConsecutive2 {
     public static void main(String[] args) {
         System.out.println(makeArrayConsecutive2(new int[]{6, 2, 3, 8}));
