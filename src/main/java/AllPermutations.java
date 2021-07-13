@@ -1,8 +1,16 @@
 /*
  * I/P: ABC
- * O/P: ABC, ACB, BAC, BCA, CAB, CBA
+ * O/P:
+ * ABC
+ * ACB
+ * BAC
+ * BCA
+ * CAB
+ * CBA
  */
 import java.util.Scanner;
+
+/* This solution works only if the input string has distinct characters */
 
 public class AllPermutations {
     public static void main(String[] args) {
