@@ -29,4 +29,20 @@ class ValidParentheses {
         }
         return stack.isEmpty();
     }
+
+    static boolean isValidII(String s) {
+        int balance = 0;
+        if (s.length() % 2 != 0) return false;
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                balance += 1;
+            } else if (c == ')') {
+                balance -= 1;
+                if (balance < 0) {
+                    return false;
+                }
+            }
+        }
+        return balance == 0;
+    }
 }
