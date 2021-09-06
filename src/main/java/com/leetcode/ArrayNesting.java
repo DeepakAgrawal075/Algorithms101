@@ -23,7 +23,7 @@ public class ArrayNesting {
     }
 
     private static int calcLength(int[] nums, int start) {
-        if (start < 0 || start == nums.length || nums[start] < 0) {
+        if (nums[start] < 0) {
             return 0;
         }
         int nextValue = nums[start];
