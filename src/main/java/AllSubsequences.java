@@ -12,6 +12,8 @@ import java.util.Scanner;
  * Input : aaa
  * Output : a, aa, aaa, ""
  */
+/* This solution works only if the input string has distinct characters */
+
 public class AllSubsequences {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
