@@ -8,8 +8,8 @@ class SingleNumberTest {
 
     @Test
     void givenArrayReturnSingleNumber() {
-        assertEquals(1, SingleNumber.singleNumber(new int[]{2, 2, 1}));
-        assertEquals(4, SingleNumber.singleNumber(new int[]{4, 1, 2, 1, 2}));
-        assertEquals(1, SingleNumber.singleNumber(new int[]{1}));
+        assertEquals(1, SingleNumber.singleNumberI(new int[]{2, 2, 1}));
+        assertEquals(4, SingleNumber.singleNumberI(new int[]{4, 1, 2, 1, 2}));
+        assertEquals(1, SingleNumber.singleNumberI(new int[]{1}));
     }
 }

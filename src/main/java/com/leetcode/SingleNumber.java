@@ -7,9 +7,20 @@
  */
 package com.leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class SingleNumber {
-    public static int singleNumber(int[] nums) {
-        /*HashMap<Integer, Integer> numFreq = new HashMap<>();
+    public static int singleNumberI(int[] nums) {
+        int result = 0;
+        for (int num : nums) {
+            result ^= num; //XOR
+        }
+        return result;
+    }
+
+    public static int singleNumberII(int[] nums) {
+        HashMap<Integer, Integer> numFreq = new HashMap<>();
         for (int num : nums) {
             if (!numFreq.containsKey(num)) {
                 numFreq.put(num, 1);
@@ -24,11 +35,5 @@ public class SingleNumber {
                 return key;
         }
         return -1;
-         */
-        int result = 0;
-        for (int num : nums) {
-            result ^= num; //XOR
-        }
-        return result;
     }
 }
