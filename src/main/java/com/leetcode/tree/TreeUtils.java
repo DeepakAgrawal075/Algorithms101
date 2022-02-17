@@ -1,7 +1,7 @@
 package com.leetcode.tree;
 
 public class TreeUtils {
-    public TreeNode insertLevelOrder(int[] treeArray, TreeNode root, int i) {
+    public static TreeNode insertLevelOrder(Integer[] treeArray, TreeNode root, int i) {
         if (i < treeArray.length) {
             root = new TreeNode(treeArray[i]);
 
@@ -11,7 +11,7 @@ public class TreeUtils {
         return root;
     }
 
-    public void printInOrder(TreeNode root) {
+    public static void printInOrder(TreeNode root) {
         if (root != null) {
             printInOrder(root.left);
             System.out.print(root.val + " ");
