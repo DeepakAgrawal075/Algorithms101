@@ -2,7 +2,7 @@ package com.leetcode.tree;
 
 public class TreeUtils {
     public static TreeNode insertLevelOrder(Integer[] treeArray, TreeNode root, int i) {
-        if (i < treeArray.length) {
+        if (i < treeArray.length && treeArray[i] != null) {
             root = new TreeNode(treeArray[i]);
 
             root.left = insertLevelOrder(treeArray, root.left, 2 * i + 1);
