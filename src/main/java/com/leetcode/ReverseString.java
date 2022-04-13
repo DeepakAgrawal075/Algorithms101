@@ -7,9 +7,9 @@
 package com.leetcode;
 
 public class ReverseString {
-    public void reverseString(char[] s) {
+    public char[] reverseString(char[] s) {
         int len = s.length;
-        if (len == 1) return;
+        if (len == 1) return s;
         int start = 0;
         int end = len - 1;
         while (start < end) {
@@ -19,5 +19,6 @@ public class ReverseString {
             start++;
             end--;
         }
+        return s;
     }
 }
