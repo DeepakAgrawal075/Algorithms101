@@ -21,6 +21,7 @@ public class AllPermutations {
 
     private static void showPattern(String prefix, String suffix) {
         if (suffix.length() <= 1) {
+            System.out.println("prefix-> " + prefix + " suffix-> " + suffix);
             System.out.println(prefix + suffix);
         } else {
             for (int i = 0; i < suffix.length(); i++) {
