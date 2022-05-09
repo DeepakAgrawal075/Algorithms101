@@ -14,10 +14,10 @@
  *
  * Note:
  * Although the above answer is in lexicographical order, your answer could be in any order you want.
- *
  */
 package com.leetcode;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -37,5 +37,26 @@ class LetterCombinations {
             }
         }
         return result;
+    }
+
+    List<String> letterCombinationsII(String digits) {
+        String[] mapping = new String[]{"0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        List<String> result = new ArrayList<>();
+        if (digits == null || digits.length() == 0) return result;
+
+        helper(result, digits, mapping, 0, "");
+        return result;
+    }
+
+    void helper(List<String> result, String digits, String[] mapping, int index, String currString) {
+        if (index == digits.length()) {
+            result.add(currString);
+            return;
+        }
+
+        String possibleChars = mapping[digits.charAt(index) - '0'];
+        for (char c : possibleChars.toCharArray()) {
+            helper(result, digits, mapping, index + 1, currString + c);
+        }
     }
 }
