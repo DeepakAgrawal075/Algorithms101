@@ -6,7 +6,7 @@ package com.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MaxLength {
+public class MaxLengthI {
     public int maxLength(List<String> input) {
         List<String> ansList = new ArrayList<>();
         int ans = 0;
