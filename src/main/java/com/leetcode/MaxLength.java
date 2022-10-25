@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MaxLength {
-    public int maxLength(List<String> arr) {
+    public int maxLength(List<String> input) {
         List<String> ansList = new ArrayList<>();
         int ans = 0;
         ansList.add("");
-        for (String str : arr) {
-            if (!checkUniqueCharString(str)) continue;
+        for (String currElement : input) {
+            if (!checkUniqueCharString(currElement)) continue;
             List<String> newAnsListWithCurrStr = new ArrayList<>();
             for (String candidate : ansList) {
-                String temp = candidate + str;
+                String temp = candidate + currElement;
                 if (checkUniqueCharString(temp)) {
                     newAnsListWithCurrStr.add(temp);
                     ans = Math.max(ans, temp.length());
