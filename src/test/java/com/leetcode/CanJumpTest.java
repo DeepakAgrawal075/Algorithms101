@@ -11,7 +11,9 @@ class CanJumpTest {
     void canJumpTest() {
         assertTrue(new CanJump().canJump(new int[]{2, 3, 1, 1, 4}));
         assertTrue(new CanJump().canJump(new int[]{1, 3, 2, 0, 2}));
+        assertTrue(new CanJump().canJump(new int[]{1, 1, 2, 5, 2, 1, 0, 0, 1, 3}));
         assertFalse(new CanJump().canJump(new int[]{3, 2, 1, 0, 4}));
         assertFalse(new CanJump().canJump(new int[]{1, 2, 1, 0, 2}));
+        assertFalse(new CanJump().canJump(new int[]{1, 1, 2, 3, 2, 1, 0, 0, 1, 3}));
     }
 }
