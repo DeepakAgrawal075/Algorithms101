@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Stack;
 
 public class NextGreaterElement {
-    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+    public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
         Map<Integer, Integer> elNextGreaterEl = new HashMap<>();
         Stack<Integer> stack = new Stack<>();
         for (int num : nums2) {
