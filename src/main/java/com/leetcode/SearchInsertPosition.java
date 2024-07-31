@@ -12,7 +12,7 @@ public class SearchInsertPosition {
         int left = 0;
         int right = nums.length - 1;
         while (left <= right) {
-            mid = left + (right - left) / 2;
+            mid = left + (right - left) / 2; // Reduces the risk of integer overflow
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] > target) {
