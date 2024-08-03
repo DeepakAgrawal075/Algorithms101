@@ -3,9 +3,26 @@ package com.leetcode;
  * 1209. Remove All Adjacent Duplicates in String II
  */
 
-import javafx.util.Pair;
 
 import java.util.Stack;
+
+class Pair<U, V> {
+    private final U key;
+    private final V value;
+
+    public Pair(U key, V value) {
+        this.key = key;
+        this.value = value;
+    }
+
+    public U getKey() {
+        return key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+}
 
 public class RemoveDuplicatesII {
     public String removeDuplicates(String s, int k) {
