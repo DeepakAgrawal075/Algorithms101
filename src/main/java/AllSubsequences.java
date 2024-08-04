@@ -22,7 +22,7 @@ public class AllSubsequences {
     }
 
     private static void printSubsequences(String prefix, String suffix) {
-        if (prefix.length() == 0) {
+        if (prefix.isEmpty()) {
             System.out.println(suffix);
             return;
         }
